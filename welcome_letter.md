@@ -16,4 +16,4 @@ Finally, we will be reading and writing programs written in C. I will not be tea
 
 I hope you have a great two weeks before the beginning of class, and I will see you August 17. You can reach me at carter_charles@columbusstate.edu. Please feel free to email me if you have any questions or concerns.
 
-Charles Catter.
+Charles Carter.
