@@ -1,3 +1,5 @@
+July 31, 2021
+
 Hello, CPSC-3125 Students,
 
 This information contains information about this class. I know you are excited and anxious to get started, so here is something to get started on.
