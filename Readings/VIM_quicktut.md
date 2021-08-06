@@ -36,7 +36,7 @@ Use these commands in the ex mode. You must be in command mode in order to invok
 * :q -- **quits** unless you have unsaved changes
 * :q! -- **quits** discarding unsaved changes
 * :w -- **writes** or saves the current text
-* :w <filename> -- **writes** to the file named by the argument
+* :w \<filename\> -- **writes** to the file named by the argument
 * :wq -- **write, quit** writes the current document and quits
 * :x -- **write, quit**, an alias for :wq
 * :e <filennae> -- **edits** the file after loading it.
