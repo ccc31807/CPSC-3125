@@ -20,7 +20,7 @@ To begin with, students must realize two very important things:
     1. search mode
     1. ex mode
 
-**command mode**, aka normal mode, is entered by using the <ESC> key. If you are in the command mode already, using <ESC> will do nothing.
+**command mode**, aka normal mode, is entered by using the \<ESC\> key. If you are in the command mode already, using \<ESC\> will do nothing.
 
 **text entry mode** is entered by using one of i, I, a, A, o, O, or other keys. See below.
 
@@ -32,7 +32,7 @@ People differ as to the number of modes available in vim. There will be others t
 
 ## Quitting/Saving/Writing Documents
 
-Use these commands in the ex mode. You must be in command mode in order to invoke them, so as a precaution type <ESC> before you use these commands.
+Use these commands in the ex mode. You must be in command mode in order to invoke them, so as a precaution type \<ESC\> before you use these commands.
 * :q -- **quits** unless you have unsaved changes
 * :q! -- **quits discarding unsaved changes
 * :w -- **writes** or saves the current text
@@ -43,7 +43,7 @@ Use these commands in the ex mode. You must be in command mode in order to invok
 
 ## Text Entry Mode
 
-If you are in command mode (by using <ESC>) these commands (and others) will place you in text entry mode.
+If you are in command mode (by using \<ESC\>) these commands (and others) will place you in text entry mode.
 * i -- **inserts** text at the cursor
 * I -- **Inserts** text at the beginning of the line
 * a -- **appends** text after the cursor
