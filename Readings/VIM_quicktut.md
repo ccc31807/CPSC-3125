@@ -56,8 +56,8 @@ Slightly more advanced commands are s (substitute multiple characters), r (repla
 ## Movement commands
 * h -- moves one character to the left (same as &#8592; )
 * j -- moves one character below (same as &#8595; )
-* j -- moves one character above (same as &#8593; )
-* j -- moves one character to the right (same as &#8594; )
+* k -- moves one character above (same as &#8593; )
+* l -- moves one character to the right (same as &#8594; )
 * w -- moves to the beginning of the word to the right (**word**)
 * e -- moves to the end of the word to the right (**end**)
 * b -- moves to the beginning of the word to the left (**back**)
