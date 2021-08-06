@@ -83,10 +83,13 @@ Slightly more advanced commands are s (substitute multiple characters), r (repla
 * H, M, L -- places the cursor at the top, middle, or bottom of the screen
 * ~ -- the tilde changes case of the character
 * <CMD>n -- for most of the editor commands, you can precede or follow with a number *n*, and that executes the command *n* times
+* q -- You can write a short program, save it to a buffer, and repeat it as many times as you like. You can use this if, for example, you need to perform a complicated editing function. Having saved the program, which vi/Vim calls a *macro*, you can execute it *n* number of times. This is a great time saver. It's not really within the scope of this quick tutorial, but it's worth mentioning just to illustrate the power of this text editor.
+* :%!xxd -- convert your file to hexadecimal characters, not really useful unless you are hand editing executable files written in machine code
 
 ## ex
 
 ex is a line editor that predates Unix. As it turns out, ex is extremely useful, still, after a couple of generations. It will pay you dividends to learn how to use ex. Just sayin'.
+
 ## Last Word
 
 The last time I counted, the Vim quickref.txt had approximately 2,800 commands. You do not have to memorize all of these commands in order to use Vim. You will find Vim useful if you learn fifty of them, and if you learn 100 of them, you will be proficient.
