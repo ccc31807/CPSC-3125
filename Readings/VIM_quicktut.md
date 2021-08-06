@@ -71,6 +71,8 @@ Slightly more advanced commands are s (substitute multiple characters), r (repla
 * yy -- **Yank yank** (copy) line to the buffer
 * p -- **paste** text in the buffer
 * d -- **delete** text
+* D -- **Delete** from the cursor to the end of the line
+* C -- **Change** text from the cursor to the end of the line
 * dd -- **delete delete** line
 
 ## Other Useful Commands
