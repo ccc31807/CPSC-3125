@@ -39,7 +39,7 @@ Use these commands in the ex mode. You must be in command mode in order to invok
 * :w \<filename\> -- **writes** to the file named by the argument
 * :wq -- **write, quit** writes the current document and quits
 * :x -- **write, quit**, an alias for :wq
-* :e <filennae> -- **edits** the file after loading it.
+* :e \<filename\> -- **edits** the file after loading it.
 
 ## Text Entry Mode
 
