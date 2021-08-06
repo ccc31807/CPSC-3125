@@ -34,7 +34,7 @@ People differ as to the number of modes available in vim. There will be others t
 
 Use these commands in the ex mode. You must be in command mode in order to invoke them, so as a precaution type \<ESC\> before you use these commands.
 * :q -- **quits** unless you have unsaved changes
-* :q! -- **quits discarding unsaved changes
+* :q! -- **quits** discarding unsaved changes
 * :w -- **writes** or saves the current text
 * :w <filename> -- **writes** to the file named by the argument
 * :wq -- **write, quit** writes the current document and quits
