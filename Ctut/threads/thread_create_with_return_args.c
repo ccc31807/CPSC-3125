@@ -1,4 +1,4 @@
-//
+//gcc thread_create_with_return_args.c -o thread_create_with_return_args.exe -Wall -pthread
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,10 +32,11 @@ int main(int argc, char *argv[])
 {
     pthread_t p;
     myret_t *rvals;
-    myarg_t args = { 10, 20 };
+    myarg_t args = { 10, 20 }; // initializes a to 10 and b to 20
     Pthread_create(&p, NULL, mythread, &args);
     Pthread_join(p, (void **) &rvals);
     printf("returned %d %d\n", rvals->x, rvals->y);
+    printf("address of args is %p, and address of myret_t is %p\n", &args, rvals);
     free(rvals);
     return 0;
 }
