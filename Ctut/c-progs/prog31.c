@@ -42,6 +42,5 @@ int main(int argc, char *argv[])
     div = division(lhs, rhs);
     printf("quotient is %lf\n", div);
 
-
     return 0;
 }

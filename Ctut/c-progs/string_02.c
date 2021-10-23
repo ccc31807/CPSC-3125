@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 
+void concat (char*, const char*, const char*);
+
 int main (void)
 {
 	void concat (char result[], const char str1[], const char str2[]);

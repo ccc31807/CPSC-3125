@@ -9,7 +9,7 @@ int main (void)
 	char line[81];
 	void readLine (char buffer[]);
 
-	for ( i = 0; i < 3; ++i )
+	for ( i = 0; i < 4; ++i )
 	{
 		readLine (line);
 		printf ("You entered [%s]\n\n", line);
