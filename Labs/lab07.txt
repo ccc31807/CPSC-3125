@@ -1,0 +1,214 @@
+/************************************************
+ * Name: linked_list_lab_part02.c
+ * Author: C data structures
+ * November 4, 2021
+ * Purpose: Write a program to create a linked list and perform insertions and deletions of all cases.
+ * Write functions to sort and finally delete the entire list at once.
+ * Compile with: gcc linked_list_lab.c -o linked_list_lab.exe -Wall
+ * Compile with: gcc lab07.c -o lab07.exe -Wall
+ * *********************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+typedef struct node Node;
+
+//variable declarations 
+//static variables
+int option;
+Node *start = NULL;
+
+//function declarations
+//I did these for you
+int menu();
+void dowhat(int);
+Node *create_ll(Node *);
+Node *display(Node *);
+
+//part 1 functions
+Node *insert_beg(Node *);
+Node *insert_end(Node *);
+Node *insert_before(Node *);
+Node *insert_after(Node *);
+
+//part 2 functions
+Node *delete_beg(Node *);
+Node *delete_end(Node *);
+Node *delete_node(Node *);
+Node *delete_after(Node *);
+Node *delete_list(Node *);
+
+
+int main()
+{
+    system("clear");
+    do
+    {
+        option = menu();
+        printf("start = %p\n", start);
+        dowhat(option);
+    }
+    while(option != 13);
+
+    return 0;
+}
+
+int menu()
+{
+    printf("\n\n *****MAIN MENU *****");
+    printf("\n 1: Create a list");
+    printf("\n 2: Display the list");
+    printf("\n 3: Add a node at the beginning");
+    printf("\n 4: Add a node at the end");
+    printf("\n 5: Add a node before a given node");
+    printf("\n 6: Add a node after a given node");
+    printf("\n 7: Delete a node at the beginning");
+    printf("\n 8: Delete a node at the end");
+    printf("\n 9: Delete a given node");
+    printf("\n 10: Delete a node after a given node");
+    printf("\n 11: Delete a list");
+    printf("\n 13: EXIT");
+    int option;
+    printf("\n\n Enter your option:  ");
+    scanf("%d", &option);
+
+    return option;
+}
+
+void dowhat(int option)
+{
+    switch(option)
+    {
+        case 1: start = create_ll(start);
+            printf("\n LINKED LIST CREATED");
+            break;
+        case 2: start = display(start);
+            break;
+        case 3: start = insert_beg(start);
+            break;
+        case 4: start = insert_end(start);
+            break;
+        case 5: start = insert_before(start);
+            break;
+        case 6: start = insert_after(start);
+            break;
+        case 7: start = delete_beg(start);
+            break;
+        case 8: start = delete_end(start);
+            break;
+        case 9: start = delete_node(start);
+            break;
+        case 10: start = delete_after(start);
+            break;
+        case 11: start = delete_list(start);
+            printf("\n LINKED LIST DELETED");
+            break;
+                
+    }
+}
+
+Node *create_ll(Node *start)
+{
+    Node *new_node, *ptr;
+    int num;
+    //priming read
+    printf(" Enter the data  (-1 to end): ");
+    scanf("%d", &num);
+    while(num != -1)
+    {
+        new_node = (Node*)malloc(sizeof(Node));
+        new_node->data = num;
+        if(start==NULL)
+        {
+            //printf("if branch, start == NULL\n");
+            new_node->next = NULL;
+            start = new_node;
+        }
+        else
+        {
+            //printf("else branch, start == %p\n", start);
+            ptr = start;
+            //traverse the list to get to the end of the LL
+            while(ptr->next != NULL)
+                ptr = ptr->next;
+            ptr->next = new_node;
+            new_node->next = NULL;
+        }
+        printf(" Enter the data:  ");
+        scanf("%d", &num);
+    }
+    return start;
+}
+
+Node *display(Node *start)
+{
+    Node *ptr;
+    ptr = start;
+    printf("\nLinked List ------------------------------\n");
+    printf(" - start->%p\n", start);
+    while(ptr != NULL)
+    {
+        printf(" - %d@%p->%p\n", ptr->data, ptr, ptr->next);
+        ptr = ptr->next;
+    }
+    printf("\n------------------------------------------\n");
+    return start;
+}
+
+
+
+
+/****************************************************
+ *
+ * students will implement the functions defined below
+ *
+ * **************************************************/
+
+
+
+
+
+Node *insert_beg(Node *start)
+{
+}
+
+Node *insert_end(Node *start)
+{
+}
+
+Node *insert_before(Node *start)
+{
+}
+
+Node *insert_after(Node *start)
+{
+}
+
+Node *delete_beg(Node *start)
+{
+}
+
+Node *delete_end(Node *start)
+{
+}
+
+Node *delete_node(Node *start)
+{
+}
+
+Node *delete_after(Node *start)
+{
+}
+
+Node *delete_list(Node *start)
+{
+}
+
+
