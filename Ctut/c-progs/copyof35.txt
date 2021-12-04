@@ -28,10 +28,9 @@ int main(int argc, char *argv[])
     scanf ("%63s", outName);
 
     // open input and output files
-    if ( (in = fopen (inName, "r")) == NULL ) 
-    {
-        printf ("Can't open %s for reading.\n", inName);
-        return 1;
+    if ( (in = fopen (inName, "r")) == NULL ) {
+    printf ("Can't open %s for reading.\n", inName);
+    return 1;
     }
     if ( (out = fopen (outName, "w")) == NULL ) {
     printf ("Can't open %s for writing.\n", outName);
